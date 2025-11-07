@@ -1,0 +1,202 @@
+[
+  {
+    "question_id": 1471,
+    "SQL_generated": "SELECT CAST(SUM(CASE WHEN Currency = 'EUR' THEN 1 ELSE 0 END) AS FLOAT) / SUM(CASE WHEN Currency = 'CZK' THEN 1 ELSE 0 END) FROM customers"
+  },
+  {
+    "question_id": 1472,
+    "SQL_generated": "SELECT c.CustomerID FROM customers c JOIN yearmonth y ON c.CustomerID = y.CustomerID WHERE c.Segment = 'LAM' AND y.Date LIKE '2012%' ORDER BY y.Consumption ASC LIMIT 1"
+  },
+  {
+    "question_id": 1473,
+    "SQL_generated": "SELECT AVG(y.Consumption) FROM customers c JOIN yearmonth y ON c.CustomerID = y.CustomerID WHERE c.Segment = 'SME' AND y.Date LIKE '2013%'"
+  },
+  {
+    "question_id": 1476,
+    "SQL_generated": "SELECT SUM(CASE WHEN c.Currency = 'CZK' THEN y.Consumption ELSE 0 END) - SUM(CASE WHEN c.Currency = 'EUR' THEN y.Consumption ELSE 0 END) FROM customers c JOIN yearmonth y ON c.CustomerID = y.CustomerID WHERE y.Date LIKE '2012%'"
+  },
+  {
+    "question_id": 1479,
+    "SQL_generated": "SELECT SUBSTRING(y.Date, 1, 4) FROM customers c JOIN yearmonth y ON c.CustomerID = y.CustomerID WHERE c.Currency = 'CZK' GROUP BY SUBSTRING(y.Date, 1, 4) ORDER BY SUM(y.Consumption) DESC LIMIT 1"
+  },
+  {
+    "question_id": 1480,
+    "SQL_generated": "SELECT SUBSTRING(y.Date, 6, 2) FROM customers c JOIN yearmonth y ON c.CustomerID = y.CustomerID WHERE c.Segment = 'SME' AND y.Date LIKE '2013%' GROUP BY SUBSTRING(y.Date, 6, 2) ORDER BY SUM(y.Consumption) DESC LIMIT 1"
+  },
+  {
+    "question_id": 1481,
+    "SQL_generated": "SELECT (SELECT AVG(y.Consumption) FROM customers c JOIN yearmonth y ON c.CustomerID = y.CustomerID WHERE c.Segment = 'SME' AND c.Currency = 'CZK' AND y.Date LIKE '2013%' GROUP BY c.CustomerID ORDER BY SUM(y.Consumption) ASC LIMIT 1) - (SELECT AVG(y.Consumption) FROM customers c JOIN yearmonth y ON c.CustomerID = y.CustomerID WHERE c.Segment = 'LAM' AND c.Currency = 'CZK' AND y.Date LIKE '2013%' GROUP BY c.CustomerID ORDER BY SUM(y.Consumption) ASC LIMIT 1) AS SME_LAM_diff, (SELECT AVG(y.Consumption) FROM customers c JOIN yearmonth y ON c.CustomerID = y.CustomerID WHERE c.Segment = 'LAM' AND c.Currency = 'CZK' AND y.Date LIKE '2013%' GROUP BY c.CustomerID ORDER BY SUM(y.Consumption) ASC LIMIT 1) - (SELECT AVG(y.Consumption) FROM customers c JOIN yearmonth y ON c.CustomerID = y.CustomerID WHERE c.Segment = 'KAM' AND c.Currency = 'CZK' AND y.Date LIKE '2013%' GROUP BY c.CustomerID ORDER BY SUM(y.Consumption) ASC LIMIT 1) AS LAM_KAM_diff, (SELECT AVG(y.Consumption) FROM customers c JOIN yearmonth y ON c.CustomerID = y.CustomerID WHERE c.Segment = 'KAM' AND c.Currency = 'CZK' AND y.Date LIKE '2013%' GROUP BY c.CustomerID ORDER BY SUM(y.Consumption) ASC LIMIT 1) - (SELECT AVG(y.Consumption) FROM customers c JOIN yearmonth y ON c.CustomerID = y.CustomerID WHERE c.Segment = 'SME' AND c.Currency = 'CZK' AND y.Date LIKE '2013%' GROUP BY c.CustomerID ORDER BY SUM(y.Consumption) ASC LIMIT 1) AS KAM_SME_diff"
+  },
+  {
+    "question_id": 1482,
+    "SQL_generated": "SELECT c.Segment, ((SUM(CASE WHEN y.Date LIKE '2013%' THEN y.Consumption ELSE 0 END) - SUM(CASE WHEN y.Date LIKE '2012%' THEN y.Consumption ELSE 0 END)) / SUM(CASE WHEN y.Date LIKE '2012%' THEN y.Consumption ELSE 0 END)) * 100 AS percentage_increase FROM customers c JOIN yearmonth y ON c.CustomerID = y.CustomerID WHERE c.Currency = 'EUR' AND c.Segment IN ('SME', 'LAM', 'KAM') GROUP BY c.Segment ORDER BY percentage_increase DESC"
+  },
+  {
+    "question_id": 1483,
+    "SQL_generated": "SELECT SUM(Consumption) FROM yearmonth WHERE CustomerID = 6 AND Date BETWEEN '2013-08' AND '2013-11'"
+  },
+  {
+    "question_id": 1484,
+    "SQL_generated": "SELECT (SELECT COUNT(*) FROM gasstations WHERE Country = 'CZE' AND Segment = 'discount') - (SELECT COUNT(*) FROM gasstations WHERE Country = 'SVK' AND Segment = 'discount')"
+  },
+  {
+    "question_id": 1486,
+    "SQL_generated": "SELECT (SELECT COUNT(*) FROM customers WHERE Segment = 'SME' AND Currency = 'CZK') - (SELECT COUNT(*) FROM customers WHERE Segment = 'SME' AND Currency = 'EUR')"
+  },
+  {
+    "question_id": 1490,
+    "SQL_generated": "SELECT (CAST(COUNT(DISTINCT CASE WHEN y.Consumption > 46.73 THEN c.CustomerID END) AS FLOAT) / COUNT(DISTINCT c.CustomerID)) * 100 FROM customers c JOIN yearmonth y ON c.CustomerID = y.CustomerID WHERE c.Segment = 'LAM'"
+  },
+  {
+    "question_id": 1493,
+    "SQL_generated": "SELECT (CAST(COUNT(DISTINCT CASE WHEN y.Consumption > 528.3 THEN y.CustomerID END) AS FLOAT) / COUNT(DISTINCT y.CustomerID)) * 100 FROM yearmonth y WHERE y.Date = '2012-02'"
+  },
+  {
+    "question_id": 1498,
+    "SQL_generated": "SELECT MAX(Consumption) FROM yearmonth WHERE Date LIKE '2012%'"
+  },
+  {
+    "question_id": 1500,
+    "SQL_generated": "SELECT DISTINCT p.Description FROM products p JOIN transactions_1k t ON p.ProductID = t.ProductID WHERE t.Date LIKE '2013-09%'"
+  },
+  {
+    "question_id": 1501,
+    "SQL_generated": "SELECT DISTINCT g.Country FROM gasstations g JOIN transactions_1k t ON g.GasStationID = t.GasStationID WHERE t.Date LIKE '2013-06%'"
+  },
+  {
+    "question_id": 1505,
+    "SQL_generated": "SELECT COUNT(DISTINCT c.CustomerID) FROM customers c JOIN yearmonth y ON c.CustomerID = y.CustomerID WHERE c.Currency = 'EUR' AND y.Consumption > 1000"
+  },
+  {
+    "question_id": 1506,
+    "SQL_generated": "SELECT DISTINCT p.Description FROM products p JOIN transactions_1k t ON p.ProductID = t.ProductID JOIN gasstations g ON t.GasStationID = g.GasStationID WHERE g.Country = 'CZE'"
+  },
+  {
+    "question_id": 1507,
+    "SQL_generated": "SELECT DISTINCT t.Time FROM transactions_1k t JOIN gasstations g ON t.GasStationID = g.GasStationID WHERE g.ChainID = 11"
+  },
+  {
+    "question_id": 1509,
+    "SQL_generated": "SELECT COUNT(*) FROM transactions_1k t JOIN gasstations g ON t.GasStationID = g.GasStationID WHERE g.Country = 'CZE' AND t.Date > '2012-01-01'"
+  },
+  {
+    "question_id": 1514,
+    "SQL_generated": "SELECT c.Currency FROM customers c JOIN transactions_1k t ON c.CustomerID = t.CustomerID WHERE t.Date = '2012-08-24' AND t.Time = '16:25:00'"
+  },
+  {
+    "question_id": 1515,
+    "SQL_generated": "SELECT c.Segment FROM customers c JOIN transactions_1k t ON c.CustomerID = t.CustomerID WHERE t.Date = '2012-08-23' AND t.Time = '21:20:00'"
+  },
+  {
+    "question_id": 1521,
+    "SQL_generated": "SELECT COUNT(*) FROM transactions_1k t JOIN gasstations g ON t.GasStationID = g.GasStationID WHERE t.Date = '2012-08-26' AND t.Time BETWEEN '08:00:00' AND '09:00:00' AND g.Country = 'CZE'"
+  },
+  {
+    "question_id": 1524,
+    "SQL_generated": "SELECT g.Country FROM gasstations g JOIN transactions_1k t ON g.GasStationID = t.GasStationID WHERE t.Date = '2012-08-24' AND t.Price = 548.4"
+  },
+  {
+    "question_id": 1525,
+    "SQL_generated": "SELECT (CAST(SUM(CASE WHEN c.Currency = 'EUR' THEN 1 ELSE 0 END) AS FLOAT) / COUNT(DISTINCT t.CustomerID)) * 100 FROM customers c JOIN transactions_1k t ON c.CustomerID = t.CustomerID WHERE t.Date = '2012-08-25'"
+  },
+  {
+    "question_id": 1526,
+    "SQL_generated": "SELECT ((SUM(CASE WHEN y.Date LIKE '2012%' THEN y.Consumption ELSE 0 END) - SUM(CASE WHEN y.Date LIKE '2013%' THEN y.Consumption ELSE 0 END)) / SUM(CASE WHEN y.Date LIKE '2012%' THEN y.Consumption ELSE 0 END)) * 100 FROM yearmonth y JOIN transactions_1k t ON y.CustomerID = t.CustomerID WHERE t.Date = '2012-08-25' AND t.Price = 634.8"
+  },
+  {
+    "question_id": 1528,
+    "SQL_generated": "SELECT (CAST(SUM(CASE WHEN Segment = 'premium' THEN 1 ELSE 0 END) AS FLOAT) / COUNT(*)) * 100 FROM gasstations WHERE Country = 'SVK'"
+  },
+  {
+    "question_id": 1529,
+    "SQL_generated": "SELECT SUM(t.Price) AS total_spent, (SELECT SUM(t2.Price) FROM transactions_1k t2 WHERE t2.CustomerID = 38508 AND t2.Date LIKE '2012-01%') AS january_2012_spent FROM transactions_1k t WHERE t.CustomerID = 38508"
+  },
+  {
+    "question_id": 1531,
+    "SQL_generated": "SELECT c.CustomerID, AVG(t.Price / t.Amount) AS avg_price_per_item, c.Currency FROM customers c JOIN transactions_1k t ON c.CustomerID = t.CustomerID GROUP BY c.CustomerID, c.Currency ORDER BY SUM(t.Price) DESC LIMIT 1"
+  },
+  {
+    "question_id": 1533,
+    "SQL_generated": "SELECT y.CustomerID, y.Date, y.Consumption FROM yearmonth y JOIN transactions_1k t ON y.CustomerID = t.CustomerID WHERE t.ProductID = 5 AND (t.Price / t.Amount) > 29.00 AND y.Date LIKE '2012-08%'"
+  },
+  {
+    "question_id": 1312,
+    "SQL_generated": "SELECT ma.major_name FROM member m JOIN major ma ON m.link_to_major = ma.major_id WHERE m.first_name = 'Angela' AND m.last_name = 'Sanders'"
+  },
+  {
+    "question_id": 1317,
+    "SQL_generated": "SELECT COUNT(*) FROM member m JOIN attendance a ON m.member_id = a.link_to_member JOIN event e ON a.link_to_event = e.event_id WHERE e.event_name = 'Women''s Soccer' AND m.t_shirt_size = 'Medium'"
+  },
+  {
+    "question_id": 1322,
+    "SQL_generated": "SELECT COUNT(*) FROM (SELECT e.event_id FROM event e JOIN attendance a ON e.event_id = a.link_to_event GROUP BY e.event_id HAVING COUNT(a.link_to_member) > 10) AS events_with_attendance JOIN event e2 ON events_with_attendance.event_id = e2.event_id WHERE e2.type = 'Meeting'"
+  },
+  {
+    "question_id": 1323,
+    "SQL_generated": "SELECT e.event_name FROM event e JOIN attendance a ON e.event_id = a.link_to_event WHERE e.type != 'Fundraiser' GROUP BY e.event_id, e.event_name HAVING COUNT(a.link_to_member) > 20"
+  },
+  {
+    "question_id": 1331,
+    "SQL_generated": "SELECT SUM(i.amount) FROM income i JOIN member m ON i.link_to_member = m.member_id WHERE m.position = 'Vice President'"
+  },
+  {
+    "question_id": 1334,
+    "SQL_generated": "SELECT CONCAT(m.first_name, ' ', m.last_name) FROM member m JOIN zip_code z ON m.zip = z.zip_code WHERE z.state = 'Illinois'"
+  },
+  {
+    "question_id": 1338,
+    "SQL_generated": "SELECT e.approved FROM expense e JOIN budget b ON e.link_to_budget = b.budget_id JOIN event ev ON b.link_to_event = ev.event_id WHERE ev.event_name = 'October Meeting' AND ev.event_date = '2019-10-08'"
+  },
+  {
+    "question_id": 1339,
+    "SQL_generated": "SELECT AVG(e.cost) FROM expense e JOIN member m ON e.link_to_member = m.member_id WHERE m.first_name = 'Elijah' AND m.last_name = 'Allen' AND (e.expense_date LIKE '%-09-%' OR e.expense_date LIKE '%-10-%')"
+  },
+  {
+    "question_id": 1340,
+    "SQL_generated": "SELECT (SELECT SUM(b.spent) FROM budget b JOIN event e ON b.link_to_event = e.event_id WHERE e.event_date LIKE '2019%') - (SELECT SUM(b.spent) FROM budget b JOIN event e ON b.link_to_event = e.event_id WHERE e.event_date LIKE '2020%')"
+  },
+  {
+    "question_id": 1344,
+    "SQL_generated": "SELECT notes FROM event WHERE type = 'Fundraiser' AND event_date = '2019-09-14'"
+  },
+  {
+    "question_id": 1346,
+    "SQL_generated": "SELECT phone FROM member WHERE first_name = 'Carlo' AND last_name = 'Jacobs'"
+  },
+  {
+    "question_id": 1350,
+    "SQL_generated": "SELECT ev.status FROM event ev JOIN budget b ON ev.event_id = b.link_to_event JOIN expense e ON b.budget_id = e.link_to_budget WHERE e.expense_description = 'Post Cards, Posters' AND e.expense_date = '2019-08-20'"
+  },
+  {
+    "question_id": 1351,
+    "SQL_generated": "SELECT ma.major_name FROM member m JOIN major ma ON m.link_to_major = ma.major_id WHERE m.first_name = 'Brent' AND m.last_name = 'Thomason'"
+  },
+  {
+    "question_id": 1352,
+    "SQL_generated": "SELECT COUNT(*) FROM member m JOIN major ma ON m.link_to_major = ma.major_id WHERE ma.major_name = 'Business' AND m.t_shirt_size = 'Medium'"
+  },
+  {
+    "question_id": 1356,
+    "SQL_generated": "SELECT ma.department FROM member m JOIN major ma ON m.link_to_major = ma.major_id WHERE m.position = 'President'"
+  },
+  {
+    "question_id": 1357,
+    "SQL_generated": "SELECT i.date_received FROM income i JOIN member m ON i.link_to_member = m.member_id WHERE m.first_name = 'Connor' AND m.last_name = 'Hilton' AND i.source = 'Dues'"
+  },
+  {
+    "question_id": 1359,
+    "SQL_generated": "SELECT (SELECT b.amount FROM budget b JOIN event e ON b.link_to_event = e.event_id WHERE e.event_name = 'Yearly Kickoff' AND b.category = 'Advertisement') - (SELECT b.amount FROM budget b JOIN event e ON b.link_to_event = e.event_id WHERE e.event_name = 'October Meeting' AND b.category = 'Advertisement')"
+  },
+  {
+    "question_id": 1361,
+    "SQL_generated": "SELECT SUM(e.cost) FROM expense e WHERE e.expense_description LIKE '%Pizza%'"
+  },
+  {
+    "question_id": 1362,
+    "SQL_generated": "SELECT COUNT(DISTINCT city) FROM zip_code WHERE county = 'Orange County' AND state = 'Virginia'"
+  },
+  {
+    "question_id": 1368,
+    "SQL_generated": "SELECT ma.major_name FROM member m JOIN major ma ON m.link_to_major = ma.major_id WHERE m.phone = '809-555-3360'"
+  }
+]
