@@ -1,0 +1,352 @@
+[
+    {
+        "question_id": 1471,
+        "tree_similarity": 0.75,
+        "graph_similarity": 1.0,
+        "join_correctness": 1.0,
+        "structural_score": 0.825
+    },
+    {
+        "question_id": 1472,
+        "tree_similarity": 0.4138,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2897
+    },
+    {
+        "question_id": 1473,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1476,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1479,
+        "tree_similarity": 0.5,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.35
+    },
+    {
+        "question_id": 1480,
+        "tree_similarity": 0.5,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.35
+    },
+    {
+        "question_id": 1481,
+        "tree_similarity": 0.1818,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.1273
+    },
+    {
+        "question_id": 1482,
+        "tree_similarity": 0.2857,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2
+    },
+    {
+        "question_id": 1483,
+        "tree_similarity": 0.8,
+        "graph_similarity": 1.0,
+        "join_correctness": 1.0,
+        "structural_score": 0.86
+    },
+    {
+        "question_id": 1484,
+        "tree_similarity": 0.2857,
+        "graph_similarity": 1.0,
+        "join_correctness": 1.0,
+        "structural_score": 0.5
+    },
+    {
+        "question_id": 1486,
+        "tree_similarity": 0.2857,
+        "graph_similarity": 1.0,
+        "join_correctness": 1.0,
+        "structural_score": 0.5
+    },
+    {
+        "question_id": 1490,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1493,
+        "tree_similarity": 0.4,
+        "graph_similarity": 1.0,
+        "join_correctness": 1.0,
+        "structural_score": 0.58
+    },
+    {
+        "question_id": 1498,
+        "tree_similarity": 0.3529,
+        "graph_similarity": 1.0,
+        "join_correctness": 1.0,
+        "structural_score": 0.547
+    },
+    {
+        "question_id": 1500,
+        "tree_similarity": 0.2609,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.1826
+    },
+    {
+        "question_id": 1501,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1505,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1506,
+        "tree_similarity": 0.3571,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.25
+    },
+    {
+        "question_id": 1507,
+        "tree_similarity": 0.4,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.28
+    },
+    {
+        "question_id": 1509,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1514,
+        "tree_similarity": 0.2609,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.1826
+    },
+    {
+        "question_id": 1515,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1521,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1524,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1525,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1526,
+        "tree_similarity": 0.2857,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2
+    },
+    {
+        "question_id": 1528,
+        "tree_similarity": 0.6667,
+        "graph_similarity": 1.0,
+        "join_correctness": 1.0,
+        "structural_score": 0.7667
+    },
+    {
+        "question_id": 1529,
+        "tree_similarity": 0.2222,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.1555
+    },
+    {
+        "question_id": 1531,
+        "tree_similarity": 0.3077,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2154
+    },
+    {
+        "question_id": 1533,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1312,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1317,
+        "tree_similarity": 0.3077,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2154
+    },
+    {
+        "question_id": 1322,
+        "tree_similarity": 0.2222,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.1555
+    },
+    {
+        "question_id": 1323,
+        "tree_similarity": 0.3448,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2414
+    },
+    {
+        "question_id": 1331,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1334,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1338,
+        "tree_similarity": 0.3077,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2154
+    },
+    {
+        "question_id": 1339,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1340,
+        "tree_similarity": 0.2,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.14
+    },
+    {
+        "question_id": 1344,
+        "tree_similarity": 0.6,
+        "graph_similarity": 1.0,
+        "join_correctness": 1.0,
+        "structural_score": 0.72
+    },
+    {
+        "question_id": 1346,
+        "tree_similarity": 1.0,
+        "graph_similarity": 1.0,
+        "join_correctness": 1.0,
+        "structural_score": 1.0
+    },
+    {
+        "question_id": 1350,
+        "tree_similarity": 0.2727,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.1909
+    },
+    {
+        "question_id": 1351,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1352,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1356,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1357,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    },
+    {
+        "question_id": 1359,
+        "tree_similarity": 0.1818,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.1273
+    },
+    {
+        "question_id": 1361,
+        "tree_similarity": 0.4,
+        "graph_similarity": 1.0,
+        "join_correctness": 1.0,
+        "structural_score": 0.58
+    },
+    {
+        "question_id": 1362,
+        "tree_similarity": 0.8,
+        "graph_similarity": 1.0,
+        "join_correctness": 1.0,
+        "structural_score": 0.86
+    },
+    {
+        "question_id": 1368,
+        "tree_similarity": 0.3333,
+        "graph_similarity": 0.0,
+        "join_correctness": 0.0,
+        "structural_score": 0.2333
+    }
+]

@@ -1,0 +1,352 @@
+[
+    {
+        "question_id": 1471,
+        "levenshtein_similarity": 0.9559,
+        "cosine_similarity": 0.9451,
+        "lexical_accuracy": 0.8,
+        "lexical_score": 0.9048
+    },
+    {
+        "question_id": 1472,
+        "levenshtein_similarity": 0.7424,
+        "cosine_similarity": 0.7619,
+        "lexical_accuracy": 0.7273,
+        "lexical_score": 0.7457
+    },
+    {
+        "question_id": 1473,
+        "levenshtein_similarity": 0.6755,
+        "cosine_similarity": 0.7115,
+        "lexical_accuracy": 0.7,
+        "lexical_score": 0.6972
+    },
+    {
+        "question_id": 1476,
+        "levenshtein_similarity": 0.8874,
+        "cosine_similarity": 0.8695,
+        "lexical_accuracy": 0.7273,
+        "lexical_score": 0.8322
+    },
+    {
+        "question_id": 1479,
+        "levenshtein_similarity": 0.913,
+        "cosine_similarity": 0.6779,
+        "lexical_accuracy": 0.7273,
+        "lexical_score": 0.7633
+    },
+    {
+        "question_id": 1480,
+        "levenshtein_similarity": 0.7581,
+        "cosine_similarity": 0.6404,
+        "lexical_accuracy": 0.7273,
+        "lexical_score": 0.7018
+    },
+    {
+        "question_id": 1481,
+        "levenshtein_similarity": 0.3404,
+        "cosine_similarity": 0.3502,
+        "lexical_accuracy": 0.7857,
+        "lexical_score": 0.4779
+    },
+    {
+        "question_id": 1482,
+        "levenshtein_similarity": 0.3456,
+        "cosine_similarity": 0.816,
+        "lexical_accuracy": 0.75,
+        "lexical_score": 0.6551
+    },
+    {
+        "question_id": 1483,
+        "levenshtein_similarity": 0.98,
+        "cosine_similarity": 1.0,
+        "lexical_accuracy": 1.0,
+        "lexical_score": 0.994
+    },
+    {
+        "question_id": 1484,
+        "levenshtein_similarity": 0.4419,
+        "cosine_similarity": 0.3459,
+        "lexical_accuracy": 1.0,
+        "lexical_score": 0.5709
+    },
+    {
+        "question_id": 1486,
+        "levenshtein_similarity": 0.4375,
+        "cosine_similarity": 0.5975,
+        "lexical_accuracy": 1.0,
+        "lexical_score": 0.6703
+    },
+    {
+        "question_id": 1490,
+        "levenshtein_similarity": 0.7015,
+        "cosine_similarity": 0.6837,
+        "lexical_accuracy": 0.6667,
+        "lexical_score": 0.6839
+    },
+    {
+        "question_id": 1493,
+        "levenshtein_similarity": 0.6624,
+        "cosine_similarity": 0.6208,
+        "lexical_accuracy": 0.8,
+        "lexical_score": 0.687
+    },
+    {
+        "question_id": 1498,
+        "levenshtein_similarity": 0.3813,
+        "cosine_similarity": 0.3841,
+        "lexical_accuracy": 0.6,
+        "lexical_score": 0.448
+    },
+    {
+        "question_id": 1500,
+        "levenshtein_similarity": 0.4724,
+        "cosine_similarity": 0.5021,
+        "lexical_accuracy": 0.5,
+        "lexical_score": 0.4925
+    },
+    {
+        "question_id": 1501,
+        "levenshtein_similarity": 0.5424,
+        "cosine_similarity": 0.5422,
+        "lexical_accuracy": 0.5,
+        "lexical_score": 0.5296
+    },
+    {
+        "question_id": 1505,
+        "levenshtein_similarity": 0.6857,
+        "cosine_similarity": 0.7408,
+        "lexical_accuracy": 0.75,
+        "lexical_score": 0.727
+    },
+    {
+        "question_id": 1506,
+        "levenshtein_similarity": 0.5449,
+        "cosine_similarity": 0.7291,
+        "lexical_accuracy": 0.7273,
+        "lexical_score": 0.6733
+    },
+    {
+        "question_id": 1507,
+        "levenshtein_similarity": 0.925,
+        "cosine_similarity": 0.7402,
+        "lexical_accuracy": 0.7143,
+        "lexical_score": 0.7879
+    },
+    {
+        "question_id": 1509,
+        "levenshtein_similarity": 0.6721,
+        "cosine_similarity": 0.6352,
+        "lexical_accuracy": 0.5,
+        "lexical_score": 0.6057
+    },
+    {
+        "question_id": 1514,
+        "levenshtein_similarity": 0.5735,
+        "cosine_similarity": 0.5716,
+        "lexical_accuracy": 0.5455,
+        "lexical_score": 0.5643
+    },
+    {
+        "question_id": 1515,
+        "levenshtein_similarity": 0.7591,
+        "cosine_similarity": 0.7532,
+        "lexical_accuracy": 0.75,
+        "lexical_score": 0.754
+    },
+    {
+        "question_id": 1521,
+        "levenshtein_similarity": 0.8883,
+        "cosine_similarity": 0.8159,
+        "lexical_accuracy": 0.7,
+        "lexical_score": 0.8029
+    },
+    {
+        "question_id": 1524,
+        "levenshtein_similarity": 0.8148,
+        "cosine_similarity": 0.7532,
+        "lexical_accuracy": 0.75,
+        "lexical_score": 0.7707
+    },
+    {
+        "question_id": 1525,
+        "levenshtein_similarity": 0.697,
+        "cosine_similarity": 0.7736,
+        "lexical_accuracy": 0.6667,
+        "lexical_score": 0.7185
+    },
+    {
+        "question_id": 1526,
+        "levenshtein_similarity": 0.6329,
+        "cosine_similarity": 0.7569,
+        "lexical_accuracy": 0.5,
+        "lexical_score": 0.6426
+    },
+    {
+        "question_id": 1528,
+        "levenshtein_similarity": 0.488,
+        "cosine_similarity": 0.7609,
+        "lexical_accuracy": 0.8333,
+        "lexical_score": 0.7008
+    },
+    {
+        "question_id": 1529,
+        "levenshtein_similarity": 0.4242,
+        "cosine_similarity": 0.4467,
+        "lexical_accuracy": 0.5,
+        "lexical_score": 0.456
+    },
+    {
+        "question_id": 1531,
+        "levenshtein_similarity": 0.5597,
+        "cosine_similarity": 0.8016,
+        "lexical_accuracy": 0.6364,
+        "lexical_score": 0.6795
+    },
+    {
+        "question_id": 1533,
+        "levenshtein_similarity": 0.5287,
+        "cosine_similarity": 0.7755,
+        "lexical_accuracy": 0.8,
+        "lexical_score": 0.7088
+    },
+    {
+        "question_id": 1312,
+        "levenshtein_similarity": 0.9254,
+        "cosine_similarity": 0.7532,
+        "lexical_accuracy": 0.8182,
+        "lexical_score": 0.8244
+    },
+    {
+        "question_id": 1317,
+        "levenshtein_similarity": 0.7463,
+        "cosine_similarity": 0.7302,
+        "lexical_accuracy": 0.8125,
+        "lexical_score": 0.7597
+    },
+    {
+        "question_id": 1322,
+        "levenshtein_similarity": 0.6638,
+        "cosine_similarity": 0.6291,
+        "lexical_accuracy": 0.6,
+        "lexical_score": 0.6308
+    },
+    {
+        "question_id": 1323,
+        "levenshtein_similarity": 0.4732,
+        "cosine_similarity": 0.7107,
+        "lexical_accuracy": 0.6667,
+        "lexical_score": 0.6263
+    },
+    {
+        "question_id": 1331,
+        "levenshtein_similarity": 0.5929,
+        "cosine_similarity": 0.6869,
+        "lexical_accuracy": 0.8,
+        "lexical_score": 0.6926
+    },
+    {
+        "question_id": 1334,
+        "levenshtein_similarity": 0.7982,
+        "cosine_similarity": 0.7168,
+        "lexical_accuracy": 0.7778,
+        "lexical_score": 0.7595
+    },
+    {
+        "question_id": 1338,
+        "levenshtein_similarity": 0.6468,
+        "cosine_similarity": 0.6954,
+        "lexical_accuracy": 0.8,
+        "lexical_score": 0.7122
+    },
+    {
+        "question_id": 1339,
+        "levenshtein_similarity": 0.5607,
+        "cosine_similarity": 0.6517,
+        "lexical_accuracy": 0.7692,
+        "lexical_score": 0.6597
+    },
+    {
+        "question_id": 1340,
+        "levenshtein_similarity": 0.289,
+        "cosine_similarity": 0.3722,
+        "lexical_accuracy": 0.6,
+        "lexical_score": 0.4156
+    },
+    {
+        "question_id": 1344,
+        "levenshtein_similarity": 0.7093,
+        "cosine_similarity": 0.3876,
+        "lexical_accuracy": 0.2,
+        "lexical_score": 0.4278
+    },
+    {
+        "question_id": 1346,
+        "levenshtein_similarity": 1.0,
+        "cosine_similarity": 1.0,
+        "lexical_accuracy": 1.0,
+        "lexical_score": 1.0
+    },
+    {
+        "question_id": 1350,
+        "levenshtein_similarity": 0.7653,
+        "cosine_similarity": 0.6019,
+        "lexical_accuracy": 0.75,
+        "lexical_score": 0.6954
+    },
+    {
+        "question_id": 1351,
+        "levenshtein_similarity": 0.9254,
+        "cosine_similarity": 0.7532,
+        "lexical_accuracy": 0.8182,
+        "lexical_score": 0.8244
+    },
+    {
+        "question_id": 1352,
+        "levenshtein_similarity": 0.8681,
+        "cosine_similarity": 0.72,
+        "lexical_accuracy": 0.7273,
+        "lexical_score": 0.7666
+    },
+    {
+        "question_id": 1356,
+        "levenshtein_similarity": 0.9083,
+        "cosine_similarity": 0.7097,
+        "lexical_accuracy": 0.7778,
+        "lexical_score": 0.7897
+    },
+    {
+        "question_id": 1357,
+        "levenshtein_similarity": 0.7358,
+        "cosine_similarity": 0.8026,
+        "lexical_accuracy": 0.8462,
+        "lexical_score": 0.7956
+    },
+    {
+        "question_id": 1359,
+        "levenshtein_similarity": 0.4,
+        "cosine_similarity": 0.4552,
+        "lexical_accuracy": 0.75,
+        "lexical_score": 0.5271
+    },
+    {
+        "question_id": 1361,
+        "levenshtein_similarity": 0.8889,
+        "cosine_similarity": 0.8182,
+        "lexical_accuracy": 1.0,
+        "lexical_score": 0.8939
+    },
+    {
+        "question_id": 1362,
+        "levenshtein_similarity": 0.9053,
+        "cosine_similarity": 0.9361,
+        "lexical_accuracy": 1.0,
+        "lexical_score": 0.946
+    },
+    {
+        "question_id": 1368,
+        "levenshtein_similarity": 0.9083,
+        "cosine_similarity": 0.6915,
+        "lexical_accuracy": 0.75,
+        "lexical_score": 0.7741
+    }
+]
