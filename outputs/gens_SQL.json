@@ -157,7 +157,7 @@
   },
   {
     "question_id": 1344,
-    "SQL_generated": "SELECT notes FROM event WHERE type = 'Fundraiser' AND event_date = '2019-09-14'"
+    "SQL_generated": "SELECT notes FROM income WHERE source = 'Fundraising' AND date_received = '2019-09-14'"
   },
   {
     "question_id": 1346,
