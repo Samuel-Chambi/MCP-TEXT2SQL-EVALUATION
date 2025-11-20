@@ -143,7 +143,7 @@ def evaluate_structural_metrics(dataset_path, generated_path, alpha=0.7, beta=0.
         print(f"[QID {qid}] TreeSim={tree_sim:.3f} | GraphSim={graph_sim:.3f} | JoinAcc={join_acc:.3f} → StructScore={struct_score:.3f}")
 
     avg_score = sum(r["structural_score"] for r in results) / len(results)
-    print(f"\n✅ Average Structural Score: {avg_score:.4f}")
+    print(f"\nAverage Structural Score: {avg_score:.4f}")
 
     with open("outputs/structural_evaluation.json", "w", encoding="utf-8") as f:
         json.dump(results, f, indent=4, ensure_ascii=False)

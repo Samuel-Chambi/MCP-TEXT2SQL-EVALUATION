@@ -106,7 +106,7 @@ def evaluate_lexical_metrics(dataset_path, generated_path, alpha=0.3, beta=0.4, 
         print(f"[QID {qid}] Levenshtein={lev_sim:.3f} | Cosine={cos_sim:.3f} | LexAcc={lex_acc:.3f} → LexScore={lex_score:.3f}")
 
     avg_score = sum(r["lexical_score"] for r in results) / len(results)
-    print(f"\n✅ Average Lexical Score: {avg_score:.4f}")
+    print(f"\nAverage Lexical Score: {avg_score:.4f}")
 
     with open("outputs/lexical_evaluation.json", "w", encoding="utf-8") as f:
         json.dump(results, f, indent=4, ensure_ascii=False)

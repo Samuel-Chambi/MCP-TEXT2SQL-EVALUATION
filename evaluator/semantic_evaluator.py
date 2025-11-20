@@ -108,7 +108,7 @@ def evaluate_semantic(dataset_path, generated_path, output_path, db_config):
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=4, ensure_ascii=False)
 
-    print(f"\n✅ Semantic evaluation written to {output_path}")
+    print(f"\nSemantic evaluation written to {output_path}")
     return results
 
 
